@@ -9,7 +9,7 @@ repositorio para hacer el primer proyecto de 42 cursus
 | isprint | done | --- |
 | strlen | done | --- |
 | memset | done | --- |
-| bzero | in progress | --- |
+| bzero | done | --- |
 | memcpy | --- | --- |
 | memmove | --- | --- |
 | strlcpy | piscine | --- |
