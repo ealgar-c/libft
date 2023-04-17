@@ -1,30 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ealgar-c <ealgar-c@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/17 15:27:11 by ealgar-c          #+#    #+#             */
-/*   Updated: 2023/04/17 18:10:01 by ealgar-c         ###   ########.fr       */
+/*   Created: 2023/04/17 18:12:33 by ealgar-c          #+#    #+#             */
+/*   Updated: 2023/04/17 18:27:52 by ealgar-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include "string.h"
 
-void ft_bzero(void *s, size_t n)
+void	*ft_memcpy(void *restrict dst, const void *restirct src, size_t n)
 {
-	size_t			counter;
-	unsigned char	*ptr;
+	size_t	cont;
+	char	*ptr_dest;
 
-	counter = 0;
-	ptr = (unsigned char *)s;
-	if(n == 0)
-		return;
-	while(counter < n)
+	ptr_dest = (char *)dst;
+	
+	cont = 0;
+	while (cont <= n)
 	{
-		ptr[counter] = '\0';
-		counter++;
+		ptr_dest[cont] = src[cont];
+		cont++;
 	}
+	return (dst);
 }
