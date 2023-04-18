@@ -10,7 +10,7 @@ repositorio para hacer el primer proyecto de 42 cursus
 | strlen | done | OK! |
 | memset | done | OK! |
 | bzero | done | OK! |
-| memcpy | --- | --- |
+| memcpy | done | OK! |
 | memmove | --- | --- |
 | strlcpy | done | --- |
 | strlcat | done | --- |
