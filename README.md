@@ -1,5 +1,14 @@
 # libft
 repositorio para hacer el primer proyecto de 42 cursus
+
+working progression:
+
+![](https://geps.dev/progress/61)
+
+francinette progression:
+
+![](https://geps.dev/progress/38)
+
 | Proyectos | Estado | Norme | francinette |
 | ---       | ---    | --- | --- |
 | isalpha | done | OK! | ok |
