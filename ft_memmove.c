@@ -6,7 +6,7 @@
 /*   By: ealgar-c <ealgar-c@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 11:32:33 by ealgar-c          #+#    #+#             */
-/*   Updated: 2023/04/18 19:41:09 by ealgar-c         ###   ########.fr       */
+/*   Updated: 2023/04/18 20:08:21 by ealgar-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	char	*ptr_dest;
 	char	*ptr_src;
 	size_t	i;
-
 
 	if (src == NULL && dst == NULL)
 		return (0);

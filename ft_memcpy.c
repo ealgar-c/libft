@@ -6,7 +6,7 @@
 /*   By: ealgar-c <ealgar-c@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 18:12:33 by ealgar-c          #+#    #+#             */
-/*   Updated: 2023/04/18 19:38:25 by ealgar-c         ###   ########.fr       */
+/*   Updated: 2023/04/18 20:08:10 by ealgar-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,6 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	ptr_dest = (char *)dst;
 	ptr_src = (const char *)src;
 	cont = 0;
-
 	while (cont < n)
 	{
 		ptr_dest[cont] = (const char)ptr_src[cont];
