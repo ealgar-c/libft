@@ -27,7 +27,7 @@ char	*ft_strnstr(const char *str, const char *to_find, size_t len)
 		b = 0;
 		if (str[a] == to_find[b])
 		{
-			while (str[a + b] == to_find[b])
+			while (str[a + b] == to_find[b] && ++max <= len)
 			{
 				b++;
 				if (to_find[b] == '\0')
