@@ -1,33 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ealgar-c <ealgar-c@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/17 18:12:33 by ealgar-c          #+#    #+#             */
-/*   Updated: 2023/04/18 12:23:00 by ealgar-c         ###   ########.fr       */
+/*   Created: 2023/04/18 12:06:56 by ealgar-c          #+#    #+#             */
+/*   Updated: 2023/04/18 12:07:37 by ealgar-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include "libft.h"
 
-void	*ft_memcpy(void * dst, const void * src, size_t n)
+int	toupper(int c)
 {
-	size_t		cont;
-	char		*ptr_dest;
-	const char	*ptr_src;
-
-	ptr_dest = (char *)dst;
-	ptr_src = (const char *)src;
-	cont = 0;
-	if (!src && !dst)
-		return (0);
-	while (cont <= n)
-	{
-		ptr_dest[cont] = ptr_src[cont];
-		cont++;
-	}
-	return (dst);
+	if (c >= 'A' && c <= 'Z')
+		return (c + 32);
+	return (c);
 }

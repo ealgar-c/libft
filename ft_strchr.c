@@ -1,33 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ealgar-c <ealgar-c@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/17 18:12:33 by ealgar-c          #+#    #+#             */
-/*   Updated: 2023/04/18 12:23:00 by ealgar-c         ###   ########.fr       */
+/*   Created: 2023/04/18 12:09:25 by ealgar-c          #+#    #+#             */
+/*   Updated: 2023/04/18 12:50:25 by ealgar-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
-void	*ft_memcpy(void * dst, const void * src, size_t n)
+char	*strchr(const char *s, int c)
 {
-	size_t		cont;
-	char		*ptr_dest;
-	const char	*ptr_src;
+	int	i;
 
-	ptr_dest = (char *)dst;
-	ptr_src = (const char *)src;
-	cont = 0;
-	if (!src && !dst)
-		return (0);
-	while (cont <= n)
+	i = 0;
+	while (s[i] != '\0')
 	{
-		ptr_dest[cont] = ptr_src[cont];
-		cont++;
+		if (s[i] == c)
+			return (&s[i]);
+		i++;
 	}
-	return (dst);
+	return (0);
 }
