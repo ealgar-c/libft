@@ -6,7 +6,7 @@
 /*   By: ealgar-c <ealgar-c@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 15:41:16 by ealgar-c          #+#    #+#             */
-/*   Updated: 2023/04/17 15:41:17 by ealgar-c         ###   ########.fr       */
+/*   Updated: 2023/04/18 10:39:19 by ealgar-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 int	ft_strlen(char *str)
 {
-	int	letras;
+	int	cont;
 
-	letras = 0;
-	while (str[letras] != '\0')
+	cont = 0;
+	while (str[cont] != '\0')
 	{
-	letras++;
+	cont++;
 	}
-	return (letras);
+	return (cont);
 }

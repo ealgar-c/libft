@@ -6,27 +6,15 @@
 /*   By: ealgar-c <ealgar-c@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 15:41:10 by ealgar-c          #+#    #+#             */
-/*   Updated: 2023/04/17 15:41:11 by ealgar-c         ###   ########.fr       */
+/*   Updated: 2023/04/18 10:38:29 by ealgar-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <ctype.h>
-#include <stdio.h>
 
-int ft_isprint(int c)
+int	ft_isprint(int c)
 {
-    if(c >= 32 && c < 127)
-        return (c);
-    return (0);
+	if (c >= 32 && c < 127)
+		return (c);
+	return (0);
 }
-
-/*int main(void)
-{
-    printf("%i\n", isprint('4'));
-    printf("%i\n", isprint(11));
-    printf("%i\n\n\n", isprint(' '));
-    printf("%i\n", ft_isprint('4'));
-    printf("%i\n", ft_isprint(11));
-    printf("%i", ft_isprint(' '));
-}*/

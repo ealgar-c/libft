@@ -2,14 +2,14 @@
 repositorio para hacer el primer proyecto de 42 cursus
 | Proyectos | Estado | Norme |
 | ---       | ---    | --- |
-| isalpha | done | --- |
-| isdigit | done | --- |
-| isalnum | done | --- |
-| isascii | done | --- |
-| isprint | done | --- |
-| strlen | done | --- |
-| memset | done | --- |
-| bzero | done | --- |
+| isalpha | done | OK! |
+| isdigit | done | OK! |
+| isalnum | done | OK! |
+| isascii | done | OK! |
+| isprint | done | OK! |
+| strlen | done | OK! |
+| memset | done | OK! |
+| bzero | done | OK! |
 | memcpy | --- | --- |
 | memmove | --- | --- |
 | strlcpy | done | --- |
