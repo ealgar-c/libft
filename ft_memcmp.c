@@ -1,33 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ealgar-c <ealgar-c@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/18 11:32:33 by ealgar-c          #+#    #+#             */
-/*   Updated: 2023/04/18 15:22:33 by ealgar-c         ###   ########.fr       */
+/*   Created: 2023/04/18 15:00:11 by ealgar-c          #+#    #+#             */
+/*   Updated: 2023/04/18 15:46:38 by ealgar-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include "libft.h"
 
-void	*ft_memmove(void *dst, const void *src, size_t len)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	char	*temp;
-	char	*ptr_dest;
-	char	*ptr_src;
-	size_t	i;
+	unsigned char	*ptr_s1;
+	unsigned char	*ptr_s2;
+	size_t			a;
 
-	i = -1;
-	ptr_dest = (char *)dst;
-	ptr_src = (char *)src;
-	temp = ptr_src;
-	while (i++ < len)
-		temp[i] = ptr_src[i];
-	i = -1;
-	while (i++ < len)
-		ptr_dest[i] = temp[i];
-	return (dst);
+	a = 0;
+	ptr_s1 = (unsigned char)s1;
+	ptr_s2 = (unsigned char)s2;
+	while (ptr_s1[a] && ptr_s2[a] && ptr_s1[a] == ptr_s2[a])
+		a++;
+	return (ptr_s1[a] - ptr_s2[a]);
 }
