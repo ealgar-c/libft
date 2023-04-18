@@ -1,38 +1,38 @@
 # libft
 repositorio para hacer el primer proyecto de 42 cursus
-| Proyectos | Estado | Norme |
-| ---       | ---    | --- |
-| isalpha | done | OK! |
-| isdigit | done | OK! |
-| isalnum | done | OK! |
-| isascii | done | OK! |
-| isprint | done | OK! |
-| strlen | done | OK! |
-| memset | done | OK! |
-| bzero | done | OK! |
-| memcpy | done | OK! |
-| memmove | done | OK! |
-| strlcpy | working | --- |
-| strlcat | done | OK! |
-| toupper | done | OK! |
-| tolower | done | OK! |
-| strchr | done | OK! |
-| strrchr | done | OK! |
-| strncmp | done | OK! |
-| memchr | done | OK! |
-| memcmp | done | OK! |
-| strnstr | done | OK! |
-| atoi | done | OK! |
-| calloc | --- | --- |
-| strdup | --- | --- |
-| substr | --- | --- |
-| strjoin | --- | --- |
-| strtrim | --- | --- |
-| split | --- | --- |
-| itoa | --- | --- |
-| strmapi | --- | --- |
-| striteri | --- | --- |
-| putchar_fd | --- | --- |
-| putstr_fd | --- | --- |
-| putendl_fd | --- | --- |
-| putnbr_fd | --- | --- |
+| Proyectos | Estado | Norme | francinette |
+| ---       | ---    | --- | --- |
+| isalpha | done | OK! | ok |
+| isdigit | done | OK! | ok |
+| isalnum | done | OK! | ok |
+| isascii | done | OK! | ok |
+| isprint | done | OK! | ok |
+| strlen | done | OK! | ok |
+| memset | done | OK! | ok |
+| bzero | done | OK! | ok |
+| memcpy | done | OK! | ok |
+| memmove | done | OK! | ok |
+| strlcpy | done | OK! | ok |
+| strlcat | done | OK! | ok |
+| toupper | done | OK! | --- |
+| tolower | done | OK! | --- |
+| strchr | done | OK! | --- |
+| strrchr | done | OK! | --- |
+| strncmp | done | OK! | --- |
+| memchr | done | OK! | ko |
+| memcmp | done | OK! | ko |
+| strnstr | done | OK! | ko |
+| atoi | done | OK! | ok |
+| calloc | --- | --- | --- |
+| strdup | --- | --- | --- |
+| substr | --- | --- | --- |
+| strjoin | --- | --- | --- |
+| strtrim | --- | --- | --- |
+| split | --- | --- | --- |
+| itoa | --- | --- | --- |
+| strmapi | --- | --- | --- |
+| striteri | --- | --- | --- |
+| putchar_fd | --- | --- | --- |
+| putstr_fd | --- | --- | --- |
+| putendl_fd | --- | --- | --- |
+| putnbr_fd | --- | --- | --- |

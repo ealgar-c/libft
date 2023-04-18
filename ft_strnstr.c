@@ -6,7 +6,7 @@
 /*   By: ealgar-c <ealgar-c@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 15:34:29 by ealgar-c          #+#    #+#             */
-/*   Updated: 2023/04/18 15:47:23 by ealgar-c         ###   ########.fr       */
+/*   Updated: 2023/04/18 18:09:32 by ealgar-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strnstr(const char *str, const char *to_find, size_t len)
 	a = 0;
 	max = 0;
 	if (to_find[a] == '\0')
-		return (str);
+		return ((char *)str);
 	while (str[a] && max <= len)
 	{
 		b = 0;
@@ -31,7 +31,7 @@ char	*ft_strnstr(const char *str, const char *to_find, size_t len)
 			{
 				b++;
 				if (to_find[b] == '\0')
-					return (&str[a]);
+					return ((char *)&str[a]);
 			}
 		}
 		a++;
