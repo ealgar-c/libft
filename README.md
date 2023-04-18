@@ -27,9 +27,9 @@ francinette progression:
 | tolower | done | OK! | --- |
 | strchr | done | OK! | --- |
 | strrchr | done | OK! | --- |
-| strncmp | done | OK! | --- |
-| memchr | to check | Error! | to check |
-| memcmp | to check | OK! | to check |
+| strncmp | done | OK! | ko |
+| memchr | done | Error! | ok |
+| memcmp | done | OK! | ok |
 | strnstr | done | OK! | ko |
 | atoi | done | OK! | ok |
 | calloc | --- | --- | --- |
