@@ -28,9 +28,9 @@ francinette progression:
 | strchr | done | OK! | --- |
 | strrchr | done | OK! | --- |
 | strncmp | done | OK! | ko |
-| memchr | done | Error! | ok |
+| memchr | done | Ok! | ok |
 | memcmp | done | OK! | ok |
-| strnstr | done | OK! | ko |
+| strnstr | done | OK! | ok |
 | atoi | done | OK! | ok |
 | calloc | --- | --- | --- |
 | strdup | --- | --- | --- |
