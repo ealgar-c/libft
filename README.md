@@ -34,8 +34,8 @@ francinette progression:
 | atoi | done | OK! | ok |
 | calloc | done | OK! | ok |
 | strdup | done | OK! | ok |
-| substr | --- | --- | --- |
-| strjoin | --- | --- | --- |
+| substr | done | OK! | ok |
+| strjoin | done | OK! | ok |
 | strtrim | --- | --- | --- |
 | split | --- | --- | --- |
 | itoa | --- | --- | --- |
