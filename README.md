@@ -3,11 +3,11 @@ repositorio para hacer el primer proyecto de 42 cursus
 
 working progression:
 
-![](https://geps.dev/progress/61)
+![](https://geps.dev/progress/66)
 
 francinette progression:
 
-![](https://geps.dev/progress/44)
+![](https://geps.dev/progress/66)
 
 | Proyectos | Estado | Norme | francinette |
 | ---       | ---    | --- | --- |
