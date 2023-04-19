@@ -6,7 +6,7 @@
 /*   By: ealgar-c <ealgar-c@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 12:09:25 by ealgar-c          #+#    #+#             */
-/*   Updated: 2023/04/18 18:03:41 by ealgar-c         ###   ########.fr       */
+/*   Updated: 2023/04/19 13:26:06 by ealgar-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,7 @@ char	*ft_strchr(const char *str, int a)
 			return ((char *) str);
 		str++;
 	}
+	if (a == '\0' || a == 1024)
+		return ((char *)str);
 	return (0);
 }

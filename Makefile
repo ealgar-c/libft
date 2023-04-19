@@ -20,6 +20,8 @@ SOURCE = ft_isalpha.c\
 		ft_memcmp.c\
 		ft_strnstr.c\
 		ft_atoi.c\
+		ft_calloc.c\
+		ft_strdup.c
 
 OBJ = $(SOURCE:.c=.o)
 
@@ -34,8 +36,8 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	$(LIB) $(NAME) $(OBJ)
 
-$(CC):
-	$(CC) $(CFLAGS) $(OBJ)
+$(OBJ): $(SOURCE)
+	$(CC) $(CFLAGS) -c $(SOURCE)
 clean:
 	rm -f $(OBJ)
 

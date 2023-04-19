@@ -6,7 +6,7 @@
 /*   By: ealgar-c <ealgar-c@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 15:34:29 by ealgar-c          #+#    #+#             */
-/*   Updated: 2023/04/18 18:09:32 by ealgar-c         ###   ########.fr       */
+/*   Updated: 2023/04/19 12:54:02 by ealgar-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,28 +14,29 @@
 
 char	*ft_strnstr(const char *str, const char *to_find, size_t len)
 {
-	int		a;
-	int		b;
-	size_t	max;
+	int	i;
+	int	j;
 
-	a = 0;
-	max = 0;
-	if (to_find[a] == '\0')
+	if (to_find[0] == '\0' || (len == 0 && !str))
 		return ((char *)str);
-	while (str[a] && max <= len)
+	i = 0;
+	while (str[i] != '\0' && (size_t)i < len)
 	{
-		b = 0;
-		if (str[a] == to_find[b])
+		j = 0;
+		while (to_find[j] != '\0' && (size_t)i + j < len)
 		{
-			while (str[a + b] == to_find[b] && ++max <= len)
+			if (str[i + j] == to_find[j])
 			{
-				b++;
-				if (to_find[b] == '\0')
-					return ((char *)&str[a]);
+				j++;
 			}
+			else
+				break ;
 		}
-		a++;
-		max++;
+		if (to_find[j] == '\0')
+		{
+			return ((char *)str + i);
+		}
+		i++;
 	}
 	return (0);
 }

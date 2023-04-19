@@ -1,28 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ealgar-c <ealgar-c@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/12 20:54:44 by ealgar-c          #+#    #+#             */
-/*   Updated: 2023/04/19 12:59:06 by ealgar-c         ###   ########.fr       */
+/*   Created: 2023/04/19 14:47:12 by ealgar-c          #+#    #+#             */
+/*   Updated: 2023/04/19 15:01:51 by ealgar-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include "libft.h"
 
-int	ft_strncmp(const char *s1, const char *s2, size_t n)
+void	*ft_calloc(size_t num, size_t size)
 {
-	size_t	i;
+	char		*ptr;
+	size_t		i;
 
+	ptr = (char *)malloc(size * num);
+	if (!ptr)
+		return (0);
 	i = 0;
-	while ((s1[i] || s2[i]) && i < n)
+	while (i < (num * size))
 	{
-		if (s1[i] != s2[i])
-			return (((unsigned char *)s1)[i] - ((unsigned char *)s2)[i]);
+		ptr[i] = '\0';
 		i++;
 	}
-	return (0);
+	return (ptr);
 }
