@@ -36,9 +36,9 @@ francinette progression:
 | strdup | done | OK! | ok |
 | substr | done | OK! | ok |
 | strjoin | done | OK! | ok |
-| strtrim | --- | --- | --- |
-| split | --- | --- | --- |
-| itoa | --- | --- | --- |
+| strtrim | done | OK! | ok |
+| split | done | OK! | ok |
+| itoa | working | --- | --- |
 | strmapi | --- | --- | --- |
 | striteri | --- | --- | --- |
 | putchar_fd | --- | --- | --- |

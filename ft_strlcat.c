@@ -3,18 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ealgar-c <ealgar-c@student.42malaga.com>   +#+  +:+       +#+        */
+/*   By: ealgar-c <ealgar-c@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/14 20:55:24 by ealgar-c          #+#    #+#             */
-/*   Updated: 2023/02/17 11:42:48 by ealgar-c         ###   ########.fr       */
+/*   Updated: 2023/04/20 14:58:53 by ealgar-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
+#include <stdlib.h>
+#include "libft.h"
+
+size_t	ft_strlcat(char *dest, char *src, size_t size)
 {
-	unsigned int	a;
-	unsigned int	b;
-	unsigned int	result;
+	size_t	a;
+	size_t	b;
+	size_t	result;
 
 	a = 0;
 	b = 0;
@@ -43,7 +46,7 @@ int	main(void)
 {
 	char			s1[45] = "Sol ";
 	char			s2[45] = "dejar de vivir";
-	unsigned int	size;
+	size_t	size;
 
 	size = 2;
 	printf("%s\n%u", s1, ft_strlcat(s1, s2, size));
