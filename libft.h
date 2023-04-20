@@ -6,7 +6,7 @@
 /*   By: ealgar-c <ealgar-c@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/19 11:58:41 by ealgar-c          #+#    #+#             */
-/*   Updated: 2023/04/20 15:09:04 by ealgar-c         ###   ########.fr       */
+/*   Updated: 2023/04/20 17:49:56 by ealgar-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,4 +42,5 @@ char			*ft_substr(char const *s, unsigned int start, size_t len);
 char			*ft_strjoin(char const *s1, char const *s2);
 char			*ft_strtrim(char const *s1, char const *set);
 char			**ft_split(char const *s, char c);
+char			*ft_itoa(int n);
 #endif

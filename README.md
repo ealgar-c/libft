@@ -38,8 +38,8 @@ francinette progression:
 | strjoin | done | OK! | ok |
 | strtrim | done | OK! | ok |
 | split | done | OK! | ok |
-| itoa | working | --- | --- |
-| strmapi | --- | --- | --- |
+| itoa | done | OK! | ok |
+| strmapi | working | --- | --- |
 | striteri | --- | --- | --- |
 | putchar_fd | --- | --- | --- |
 | putstr_fd | --- | --- | --- |
