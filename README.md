@@ -3,11 +3,11 @@ repositorio para hacer el primer proyecto de 42 cursus
 
 working progression:
 
-![](https://geps.dev/progress/75)
+![](https://geps.dev/progress/88)
 
 francinette progression:
 
-![](https://geps.dev/progress/75)
+![](https://geps.dev/progress/88)
 
 | Proyectos | Estado | Norme | francinette |
 | ---       | ---    | --- | --- |
@@ -39,8 +39,8 @@ francinette progression:
 | strtrim | done | OK! | ok |
 | split | done | OK! | ok |
 | itoa | done | OK! | ok |
-| strmapi | working | --- | --- |
-| striteri | --- | --- | --- |
+| strmapi | done | OK! | ok |
+| striteri | working | --- | --- |
 | putchar_fd | --- | --- | --- |
 | putstr_fd | --- | --- | --- |
 | putendl_fd | --- | --- | --- |
