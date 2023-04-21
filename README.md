@@ -59,8 +59,8 @@ francinette progression:
 | Proyectos | Estado | Norme | francinette |
 | ---       | ---    | --- | --- |
 | ft_lstnew | done | OK! | ok |
-| ft_lstadd_front | working | --- | --- |
-| ft_lstsize | --- | --- | --- |
+| ft_lstadd_front | done | OK! | ok |
+| ft_lstsize | done | OK! | ok |
 | ft_lstlast | --- | --- | --- |
 | ft_lstaddback | --- | --- | --- |
 | ft_lstdelone | --- | --- | --- |
