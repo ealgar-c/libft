@@ -40,7 +40,8 @@ SOURCE_BONUS = ft_lstnew_bonus.c\
 				ft_lstsize_bonus.c\
 				ft_lstlast_bonus.c\
 				ft_lstadd_back_bonus.c\
-				ft_lstdelone_bonus.c
+				ft_lstdelone_bonus.c\
+				ft_lstclear_bonus.c
 
 OBJ = $(SOURCE:.c=.o)
 
