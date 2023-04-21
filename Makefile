@@ -1,4 +1,5 @@
 NAME = libft.a
+
 SOURCE = ft_isalpha.c\
 		ft_isdigit.c\
 		ft_isalnum.c\
@@ -34,7 +35,11 @@ SOURCE = ft_isalpha.c\
 		ft_putendl_fd.c\
 		ft_putnbr_fd.c
 
+SOURCE_BONUS = ft_lstnew_bonus.c\
+
 OBJ = $(SOURCE:.c=.o)
+
+OBJ_BONUS = $(SOURCE_BONUS:.c=.o)
 
 CC = gcc
 
@@ -57,4 +62,7 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: re all clean fclean
+bonus: $(OBJ_BONUS) $(OBJ)
+	$(LIB) $(NAME) $(OBJ) $(OBJ_BONUS)
+
+.PHONY: re all clean fclean bonus
