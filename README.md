@@ -45,3 +45,25 @@ francinette progression:
 | putstr_fd | done | OK! | ok |
 | putendl_fd | done | OK! | ok |
 | putnbr_fd | done | OK! | ok |
+
+**BONUS FUNCTIONS**	
+
+working progression:
+
+![](https://geps.dev/progress/0)
+
+francinette progression:
+
+![](https://geps.dev/progress/0)
+
+| Proyectos | Estado | Norme | francinette |
+| ---       | ---    | --- | --- |
+| ft_lstnew | --- | --- | --- |
+| ft_lstadd_front | --- | --- | --- |
+| ft_lstsize | --- | --- | --- |
+| ft_lstlast | --- | --- | --- |
+| ft_lstaddback | --- | --- | --- |
+| ft_lstdelone | --- | --- | --- |
+| ft_lstclear | --- | --- | --- |
+| ft_lstiter | --- | --- | --- |
+| ft_lstmap | --- | --- | --- |
