@@ -50,11 +50,11 @@ francinette progression:
 
 working progression:
 
-![](https://geps.dev/progress/0)
+![](https://geps.dev/progress/33)
 
 francinette progression:
 
-![](https://geps.dev/progress/0)
+![](https://geps.dev/progress/33)
 
 | Proyectos | Estado | Norme | francinette |
 | ---       | ---    | --- | --- |
