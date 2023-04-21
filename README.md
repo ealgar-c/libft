@@ -50,11 +50,11 @@ francinette progression:
 
 working progression:
 
-![](https://geps.dev/progress/55)
+![](https://geps.dev/progress/100)
 
 francinette progression:
 
-![](https://geps.dev/progress/55)
+![](https://geps.dev/progress/100)
 
 | Proyectos | Estado | Norme | francinette |
 | ---       | ---    | --- | --- |
@@ -65,5 +65,5 @@ francinette progression:
 | ft_lstaddback | done | OK! | ok |
 | ft_lstdelone | done | OK! | ok |
 | ft_lstclear | done | OK! | ok |
-| ft_lstiter | --- | --- | --- |
-| ft_lstmap | --- | --- | --- |
+| ft_lstiter | done | OK! | ok |
+| ft_lstmap | done | OK! | ok |
