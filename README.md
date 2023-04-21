@@ -64,6 +64,6 @@ francinette progression:
 | ft_lstlast | done | OK! | ok |
 | ft_lstaddback | done | OK! | ok |
 | ft_lstdelone | done | OK! | ok |
-| ft_lstclear | --- | --- | --- |
+| ft_lstclear | done | OK! | ok |
 | ft_lstiter | --- | --- | --- |
 | ft_lstmap | --- | --- | --- |
