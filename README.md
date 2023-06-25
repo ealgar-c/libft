@@ -66,15 +66,59 @@ Este es tu primer proyecto como estudiante de 42. Deberás programar algunas fun
 ```
 
 <h2 align="center">⚙️ PROYECT GENERAL PROCEDURE ⚙️</h2>
-## INDEX
 
-- [Introduction](#introduction)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+### INDEX
+FUNCIONES BASE:
+- [ft_isalpha](#isalpha)
+- [ft_isdigit](#isdigit)
+- [ft_isalnum](#isalnum)
+- [ft_isalpha](#isascii)
+- [ft_isprint](#isprint)
+- [ft_strlen](#strlen)
+- [ft_memset](#memset)
+- [ft_bzero](#bzero)
+- [ft_memcpy](#memcpy)
+- [ft_memmove](#memmove)
+- [ft_strlcpy](#strlcpy)
+- [ft_strlcat](#strlcat)
+- [ft_toupper](#toupper)
+- [ft_tolower](#tolower)
+- [ft_strchr](#strchr)
+- [ft_strrchr](#strrchr)
+- [ft_strncmp](#strncmp)
+- [ft_memchr](#memchr)
+- [ft_memcmp](#memcmp)
+- [ft_strnstr](#strnstr)
+- [ft_atoi](#atoi)
+- [ft_calloc](#calloc)
+- [ft_strdup](#strdup)
 
-## **isalpha**
+FUNCIONES ADICIONALES:
+- [ft_substr](#substr)
+- [ft_strjoin](#strjoin)
+- [ft_split](#split)
+- [ft_itoa](#itoa)
+- [ft_strmapi](#strmapi)
+- [ft_striteri](#striteri)
+- [ft_putchar_fd](#putchar_fd)
+- [ft_putstr_fd](#putstr_fd)
+- [ft_putendl_fd](#putendl_fd)
+- [ft_putnbr_fd](#putnbr_fd)
+
+FUNCIONES BONUS:
+- [ft_lstnew](#lstnew)
+- [ft_lstadd_front](#lstadd_front)
+- [ft_lstsize](#lstsize)
+- [ft_lstlast](#lstlast)
+- [ft_lstadd_back](#lstadd_back)
+- [ft_lstdelone](#lstdelone)
+- [ft_lstclear](#lstclear)
+- [ft_lstiter](#lstiter)
+- [ft_lstmap](#lstmap)
+
+
+## FUNCIONES BASE:
+### **isalpha**
 
 - CÓDIGO
     
@@ -92,7 +136,7 @@ esta función consiste en enviarle un entero y que esta devuelva un valor positi
 
 En este caso si se trata de un carácter alfabético la función devuelve su valor ASCII (que sabemos que va a ser distinto de 0)
 
-## **isdigit**
+### **isdigit**
 
 - CÓDIGO
     
@@ -110,7 +154,7 @@ Esta función consiste en enviarle un entero y que esta devuelva un valor positi
 
 En este caso si se trata de un dígito la función devuelve su valor ASCII (que sabemos que va a ser distinto de 0)
 
-## **isalnum**
+### **isalnum**
 
 - CÓDIGO
     
@@ -128,7 +172,7 @@ Esta función consiste en enviarle un entero y que esta devuelva un valor positi
 
 Al estar trabajando bajo una misma librería, simplemente hacemos si se cumple alguna de las dos funciones creadas previamente, en caso afirmativo devuelve su valor ASCII.
 
-## **isascii**
+### **isascii**
 
 - CÓDIGO
     
@@ -144,7 +188,7 @@ Al estar trabajando bajo una misma librería, simplemente hacemos si se cumple a
 
 Esta función nos pide que comprobemos si el entero que hemos recibido es un valor de la tabla ASCII, por tanto simplemente pondremos los límites de todo ASCII.
 
-## **isprint**
+### **isprint**
 
 - CÓDIGO
     
@@ -160,11 +204,11 @@ Esta función nos pide que comprobemos si el entero que hemos recibido es un val
 
 En este caso se nos pide que la función se reduzca a los valores imprimibles de ASCII, que van del 32 al 126.
 
-## **strlen**
+### **strlen**
 
 Se nos pide que recreemos la función strlen, hecha durante [la piscina](https://www.notion.so/PISCINA-42-fd758fb6eaf54e1e92ea8875e91fd6fb?pvs=21).
 
-## **memset**
+### **memset**
 
 - CÓDIGO
     
@@ -194,7 +238,7 @@ Para hacer este ejercicio es importante saber cómo funciona y que es [size_t](h
 2. Después de esto las inicializamos, `counter = 0` y `ptr = (unsigned char *)b` , esta ultima se encarga de guardar la posición de memoria a la que está apuntando b cambiando su valor por un puntero a unsigned char, que es con lo que estamos trabajando. Necesitamos hacer esto dado que en la siguiente parte del código vamos a introducir datos en esa posición de memoria y no podemos hacerlo si trabajamos unicamente con `b` , esto es así porque `b` realmente es un puntero que apunta al vacío y si tratasemos de modificarlo daría error
 3. A continuación simplemente inicializamos un bucle while que se encarga de introducir en los bloques de memoria el valor unsigned char al que pertenece c (`(unsigned char)c` es una forma de “modificar” de manera temporal el tipo de variable de c de forma que lo que introducimos en el bloque de memoria no es un entero si no un carácter) ademas a petición de la propia función enviamos el primer argumento de la función (`return(b);`).
 
-## **bzero**
+### **bzero**
 
 - CÓDIGO
     
@@ -219,7 +263,7 @@ Para hacer este ejercicio es importante saber cómo funciona y que es [size_t](h
 
 Esta función es una simple modificación de la función memset, se requiere que la función haga lo mismo pero en vez de inicializarlo a un valor enviado por argumentos se hace con el carácter \0, otra modificación es que esta no devuelve nada.
 
-## **memcpy**
+### **memcpy**
 
 - CÓDIGO
     
@@ -251,7 +295,7 @@ En primer, después de crear las variables, lugar protegeremos la función para 
 
 Como veis, en el bucle estamos poniendo como condición `cont < n` , es importante entender que, aunque de primeras pueda parecer que lo lógico es ponerlo como ≤=, esto no serviría, ya que `n` habla de cantidad y por tanto empieza a contar en 1 y la variable `cont` trabaja con posición y por tanto empieza en 0.
 
-## **memmove**
+### **memmove**
 
 - CÓDIGO
     
@@ -294,7 +338,7 @@ Después de esto hay que crear un if, este condicional nos enseña cómo, depend
 1. if `ptr_dest > ptr_src` quiere decir que si la dirección de destino está por encima, en este caso el programa ejecutará la copia desde src hasta dest pero lo hará en sentido inverso, así se asegura de que no haya problema. Para hacer esto se trabaja directamente con len, que apunta al final del string, y se ira reduciendo hasta llegar a 0.
 2. else, es decir, if `ptr_dest < ptr_src` , el programa ejecuta el bucle while normal y corriente.
 
-## **strlcpy**
+### **strlcpy**
 
 - CÓDIGO
     
@@ -324,7 +368,7 @@ Después de esto hay que crear un if, este condicional nos enseña cómo, depend
 
 En si la función es igual que la que hicimos durante la piscina, pero teniendo en cuenta que tenemos que el prototipo de la función debe ser el mismo que el del manual
 
-## **strlcat**
+### **strlcat**
 
 - CÓDIGO
     
@@ -360,7 +404,7 @@ En si la función es igual que la que hicimos durante la piscina, pero teniendo 
 
 Igual que el anterior, ya hecho en la piscina pero con otro prototipo de función
 
-## **toupper**
+### **toupper**
 
 - CÓDIGO
     
@@ -376,7 +420,7 @@ Igual que el anterior, ya hecho en la piscina pero con otro prototipo de funció
 
 Pues eso, pasa el carácter de minúscula a mayúscula
 
-## **tolower**
+### **tolower**
 
 - CÓDIGO
     
@@ -392,7 +436,7 @@ Pues eso, pasa el carácter de minúscula a mayúscula
 
 La de antes a la inversa basicamente
 
-## **strchr**
+### **strchr**
 
 - CÓDIGO
     
@@ -420,7 +464,7 @@ Este ejercicio no tiene especial complicación, Lo primero que hacemos es compro
 
 Una vez hemos salido de str, significa que estamos apuntando ya a `\0`, es importante saber que la función no termina ahí, si no que tenemos que añadir un último condicional en el que en caso de que el carácter buscado fuese `\0` debemos devolver ese valor. Añadimos también el 1024 sinceramente no se porqué pero paco me daba fallo si no (no recuerdo si en modo normal o strict pero bueno por si acaso)
 
-## **strrchr**
+### **strrchr**
 
 - CÓDIGO
     
@@ -444,7 +488,7 @@ Una vez hemos salido de str, significa que estamos apuntando ya a `\0`, es impor
 
 Funciona igual que strchr pero nos indica la posición de la última posición del carácter que nos piden, o lo que es lo mismo, el primero desde el final. 
 
-## **strncmp**
+### **strncmp**
 
 - CÓDIGO
     
@@ -467,7 +511,7 @@ Funciona igual que strchr pero nos indica la posición de la última posición d
 
 Igual que el de la piscina pero con `const char *` , no tiene mucho más.
 
-## **memchr**
+### **memchr**
 
 - CÓDIGO
     
@@ -492,7 +536,7 @@ Igual que el de la piscina pero con `const char *` , no tiene mucho más.
 
 Básicamente igual que strchr pero es hasta `n` caracteres y recibiendo punteros de tipo `void *` , por ello trabajamos casteando el puntero recibido en una variable que creamos nosotros con la que podemos trabajar (en mi caso es `ptr`). No tenemos que tener en cuenta el `\0` y el `1024` porque estamos trabajando con memoria genérica, que no siempre va a ser char.
 
-## **memcmp**
+### **memcmp**
 
 - CÓDIGO
     
@@ -521,7 +565,7 @@ La función memcmp se usa para comparar dos bloques de memoria y devolver la dif
 
 Como todos los ejercicios donde trabajamos con bloques de memoria, el primer paso es castear estos bloques en una variable que definamos nosotros con la que podamos trabajar. Despues de definir las variables y castar los argumentos en estas, comenzamos la comparación. Esta la hacemos de forma que mientras llevemos menos posiciones de las que nos piden, sigue avanzando salvo en el caso donde difieran los valores de los bloques de memoria, en ese caso se devuelve la diferencia.
 
-## **strnstr**
+### **strnstr**
 
 - CÓDIGO
     
@@ -566,7 +610,7 @@ Si no me equivoco realmente la única modificación que tiene con esta es que no
 
 </aside>
 
-## **atoi**
+### **atoi**
 
 - CÓDIGO
     
@@ -605,7 +649,7 @@ Versión del atoi que había en los examenes, replicamos la función del manual.
 
 </aside>
 
-## **calloc**
+### **calloc**
 
 - CÓDIGO
     
@@ -631,7 +675,7 @@ Versión del atoi que había en los examenes, replicamos la función del manual.
 
 Si habeis leido la hoja de malloc habreis visto que calloc está explicado ahí dado que es una función muy típica y la expliqué ahí pero bueno se ve que hay que recrearla. El funcionamiento de calloc es muy simple, se le envía el número de caracteres que queremos asignar y el tamaño de cada bloque de memoria. Definiremos una variable que usaremos de contador para las iteraciones `i` y un puntero a caracter `ptr` donde vamos a guardar las cosas, después de esto reservamos la memoria con malloc en `ptr`, comprobamos si la asignación se ha hecho correctamente (esto hay que hacerlo siempre que se haga malloc) y por ultimo haremos un bucle que vaya rellenando de `\0` tantas veces como nos han pedido. 
 
-## **strdup**
+### **strdup**
 
 - CÓDIGO
     
@@ -657,9 +701,9 @@ Si habeis leido la hoja de malloc habreis visto que calloc está explicado ahí 
 
 La función strdup duplica una cadena de caracteres recibida como argumento en otra definida en la propia función, para la cual nos piden que alojemos memoria. El funcionamiento es el siguiente: Primero definimos las variables a usar, después alojamos memoria en el string creado mediante malloc (con su respectiva comprobación). Después en el bucle le vamos asignando todo. Es un poco como calloc pero en vez de `\0` le asignamos el respectivo valor de s1 y con la necesidad de calcular antes cuando mide s1 para saber las iteraciones que tiene que dar el bucle y la cantidad de memoria que vamos a necesitar.
 
-# FUNCIONES ADICIONALES
+## FUNCIONES ADICIONALES
 
-## **substr**
+### **substr**
 
 - CÓDIGO
     
@@ -701,7 +745,7 @@ Una vez entendido esto, podemos pasar ya a entender como se aplica este procesam
 
 despues de estas comprobaciones alojamos la memoria y comprobamos que no haya fallos y enviamos a memcpy para que copie en `s_copy` (o como se llame el puntero a char que habeis creado para guardar el substring), enviamos también `s + start` (la posición de memoria desde la que vamos a empezar a copiar) y `len` , la cantidad a copiar. despues añadimos el `\0` y lo devolvemos.
 
-## strjoin
+### strjoin
 
 - CÓDIGO
     
@@ -737,13 +781,7 @@ despues de estas comprobaciones alojamos la memoria y comprobamos que no haya fa
 
 strjoin concatena dos strings `s1` y `s2` en un tercer string para el que se aloja memoria. Es una modificación del strcat. se asocia la memoria dando como tamaño un `len` donde se ha guardado el `strlen` de cada string recibido y luego se hacen dos bucles con cada string para copiarlos en el que vamos a devolver.
 
-## **strtrim**
-
-```c
-
-```
-
-## **split**
+### **split**
 
 - CÓDIGO
     
@@ -861,7 +899,7 @@ vamos ahora con el bucle, empezamos como suele ser común con un bucle que recor
 
 Una vez guardada la palabra por la que vayamos tenemos que verificar si ha ido bien, y en caso de fallo llamaremos a `ft_free` y finalizaremos el programa. En caso de que haya funcionado, aumentamos `i` lo que haya medido la palabra que hemos metido y empezamos desde ahi a buscar la siguiente palabra. Por ultimo, una vez terminado todo el string, añadimos la linea de `str` que tiene unicamente un `\0` y enviamos la tabla.
 
-## **itoa**
+### **itoa**
 
 - CÓDIGO
     
@@ -909,7 +947,7 @@ Una vez guardada la palabra por la que vayamos tenemos que verificar si ha ido b
 
 La función itoa es la versión opuesta del atoi. Recibe un entero y devuelve ese numero en ascii. Para este ejercicio el primer paso es crear un `long int` donde haremos una copia del numero y en la que basicamente trabajaremos casi todo. Una vez hecha la copia la igualamos a `n` y , en caso de que sea negativo, lo pasamos a positivo. despues de esto usamos dcount para contar cuantos dígitos tiene el número y, por tanto, cuanta memoria tenemos que reservar. Antes de hacer el malloc nos aseguramos de que, si el `n` original es negativo, `n_len` será incrementado en uno, esto es para poder añadir el símbolo negativo. Hacemos malloc y comprobamos que haya ido bien y, después de esto, rellenamos el `str` de atrás para adelante. Lo primero que hacemos es poner el `\0` y luego vamos rellenando del resultado de sumarle `'0'` al resto de dividir la copia del número por 10, esto lo hacemos bajando cada vez una unidad el `n_len` hasta que lleguemos a 0 dígitos. Por ultimo en caso de que `n < 0` , como hemos reservado un hueco de memoria más, tenemos que añadir `'-'` al `str[0]` y devolver `str` .
 
-## **strmapi**
+### **strmapi**
 
 - CÓDIGO
     
@@ -939,7 +977,7 @@ La función itoa es la versión opuesta del atoi. Recibe un entero y devuelve es
 
 Es la primera vez que vemos una función pasada como argumentos, básicamente, esto permite que se pueda pasar una lógica específica como argumento de una función, lo que significa que la función puede ser más reutilizable y modular. En otras palabras, hace que el código sea mas flexible y mas adaptable. La función que tenemos es strmapi, esta función recoge como argumentos un string `s` y una función `f` que a su vez recoge `(unsigned int, char)` y devuelve `char *` . Lo que nos piden en esta función es que devulvamos un string resultado de aplicar `f` en todos los caracteres de `s` . Para ello después de comprobar que los valores recibidos son válidos, alojamos en un string definido por nosotros tanta memoria como necesitemos para copiar `s` , después usamos un bucle que recorra todo el string iterando los caracteres de este por la función `f` .
 
-## **striteri**
+### **striteri**
 
 - CÓDIGO
     
@@ -962,7 +1000,7 @@ Es la primera vez que vemos una función pasada como argumentos, básicamente, e
 
 Realiza lo mismo que strmapi pero esta vez en vez de hacer una copia del string original iterandolo, nos envían la dirección de memoria de `s` para que actuemos directamente sobre esta, haciendolo más simple aunque es más destructivo.
 
-## **putchar_fd**
+### **putchar_fd**
 
 - CÓDIGO
     
@@ -976,7 +1014,7 @@ Realiza lo mismo que strmapi pero esta vez en vez de hacer una copia del string 
 
 Cuando aprendimos sobre write al principio de la piscina nos acostumbramos a que la estructura que se usaba en C para write era `write(1, ...)` , sin embargo, esto no tiene porqué ser así. El primer valor de write hace referencia a dónde queremos que escriba la función, por defecto 1 hace referencia a que muestre por pantalla, sin embargo hay veces que lo que queremos es que esto lo escriba en un archivo, para ello trabajaremos con file descriptors. Los fd son números que se asocian a un fichero cuando el programa los abre *(ya hare una pagina rápida sobre como opera C con ficheros) .* Esta función es una simple función para entender que C puede actuar en archivos y realmente no tiene el código mucha explicación
 
-## **putstr_fd**
+### **putstr_fd**
 
 - CÓDIGO
     
@@ -995,7 +1033,7 @@ Cuando aprendimos sobre write al principio de la piscina nos acostumbramos a que
 
 Igual que la primera función que trabaja fd, esta función es muy simple, solo hay que llamar a strlen para saber de que tamaño es el string.
 
-## **putendl_fd**
+### **putendl_fd**
 
 - CÓDIGO
     
@@ -1012,7 +1050,7 @@ Igual que la primera función que trabaja fd, esta función es muy simple, solo 
 
 Aqui te piden que hagas como en putstr pero poniendo un salto de línea al final, la forma mas fácil de hacer esto es llamando a putstr_fd y luego usando la propia función write.
 
-## **putnbr_fd**
+### **putnbr_fd**
 
 - CÓDIGO
     
@@ -1043,16 +1081,14 @@ Aqui te piden que hagas como en putstr pero poniendo un salto de línea al final
 
 Es literalmente la función de la piscina pero en vez de escribir en pantalla escribimos en un archivo.
 
-### FUNCIONES BONUS
+## FUNCIONES BONUS
 
 <aside>
 💡 Para hacer las funciones bonus, es necesario saber qué son los structs, como se definen, para qué sirven y como se usan.
 
 </aside>
 
-[structs](https://www.notion.so/structs-09611a7896904458b354fa37eb0e9f62?pvs=21)
-
-## **lstnew**
+### **lstnew**
 
 - CÓDIGO
     
@@ -1072,7 +1108,7 @@ Es literalmente la función de la piscina pero en vez de escribir en pantalla es
 
 Se nos pide que la función lstnew cree un nuevo nodo, para el que alojaremos memoria con malloc y que lo rellenemos con: lo recibido en el argumento content dentro de el miembreo `content` de nuestro nuevo nodo y NULL en el miembro next, por ultimo se devuelve un puntero a este nodo.  
 
-## **lstadd_front**
+### **lstadd_front**
 
 - CÓDIGO
     
@@ -1090,7 +1126,7 @@ Se nos pide que la función lstnew cree un nuevo nodo, para el que alojaremos me
 
 En la función lstadd_front estamos recibiendo por argumentos un puntero al primer nodo de una lista enlazada y un nodo que nos piden que metamos al principio de lst. El código que creamos hace primero un condicional que comprueba que sean útiles los argumentos recibidos y luego mete toda la lista `lst` en el miembro `new->next` y modifica a donde apunta `lst` para que apunte ahora a `new` .
 
-## **lstsize**
+### **lstsize**
 
 - CÓDIGO
     
@@ -1116,7 +1152,7 @@ En la función lstadd_front estamos recibiendo por argumentos un puntero al prim
 
 La función lstsize devuelve la cantidad de nodos que tiene una lista que recibe por argumentos. Para ello creamos una copia de lst en una t_list que creamos en la propia función, y creamos un bucle while que simplemente compruebe si hay un siguiente nodo y en caso afirmativo incrementa el contador de nodos en uno y pasa al siguiente nodo. Por ultimo devuelve el número de nodos.
 
-## **lstlast**
+### **lstlast**
 
 - CÓDIGO
     
@@ -1137,7 +1173,7 @@ La función lstsize devuelve la cantidad de nodos que tiene una lista que recibe
 
 En lstlast nos envian por argumentos un puntero al comienzo de una lista enlazada y se pide que devolvamos el ultimo nodo de esta. Por lógica entendemos que el último nodo de una lista es aquel cuyo miembro `next` apunta a null. Por tanto simplemente iremos pasando por los diferentes nodos en la lista trabajando con una copia (de nuevo porque no queremos modificar el valor de la lista real) y cuando lleguemos a un punto donde no exista `actual->next` significará que hemos llegado al ultimo nodo, por lo tanto enviamos un puntero a este.
 
-## **lstadd_back**
+### **lstadd_back**
 
 - CÓDIGO
     
@@ -1159,7 +1195,7 @@ En lstlast nos envian por argumentos un puntero al comienzo de una lista enlazad
 
 lstadd_back recibe por argumentos el puntero al comienzo de la lista y un nodo `new` que nos piden que añadamos al final de esta. Creamos un nodo `ult` y ponemos un condicional, en caso de que `lst` no esté vacío, ponemos en ult un puntero al final de la lista y añadimos `new` en         `ult->next` , de forma que lo metemos al final. En caso de que la lista esté vacía, le añadimos el nodo `new` al principio.
 
-## **lstdelone**
+### **lstdelone**
 
 - CÓDIGO
     
@@ -1185,7 +1221,7 @@ Primero, se comprueba si el puntero al nodo o el puntero a la función son nulos
 
 Luego, se crea un puntero **`actual`** y se le asigna el valor de **`lst`**. Esto es para que podamos liberar la memoria asociada a **`lst`** sin perder el puntero a la siguiente estructura en la lista enlazada. Se actualiza **`lst`** para que apunte a la siguiente estructura en la lista enlazada. Luego, se libera la memoria asociada a **`actual`**, lo que elimina el nodo de la lista enlazada. Por último, se establece **`lst`** en 0 para garantizar que ya no apunta al nodo que se ha eliminado.
 
-## **lstclear**
+### **lstclear**
 
 - CÓDIGO
     
@@ -1214,7 +1250,7 @@ La función recorre la lista desde el primer nodo hasta el último, utilizando u
 
 Al finalizar el proceso, se iguala el puntero a 0 para indicar que la lista está vacía.
 
-## **lstiter**
+### **lstiter**
 
 - CÓDIGO
     
@@ -1238,7 +1274,7 @@ La función comienza comprobando si tanto **`lst`** como **`f`** son diferentes 
 
 Luego, la función recorre la lista mientras que el puntero **`lst`** no sea nulo. En cada iteración, se aplica la función **`f`** al contenido de la estructura del nodo actual y luego se avanza al siguiente nodo de la lista.
 
-## **lstmap**
+### **lstmap**
 
 - CÓDIGO
     
