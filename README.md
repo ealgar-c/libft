@@ -594,7 +594,7 @@ Si no me equivoco realmente la única modificación que tiene con esta es que no
 Versión del atoi que había en los examenes, replicamos la función del manual. Realmente según me han dicho al corregirme la parte de los espacios y saltos no es necesaria ya que la función atoi no maneja eso, pero bueno yo la deje puesta. No hay mucho más que explicar es el atoi de la piscina pero simplificado.
 
 <aside>
-💡 Antes de pasar a las siguientes funciones, es importante entender cómo funciona [malloc](https://www.notion.so/Las-funciones-de-gesti-n-din-mica-c48bba8026f7494bb7f94a0a10bb0702?pvs=21) y la [memoria dinamica.](https://www.notion.so/La-memoria-en-programas-en-C-a207d529219e43c198ae90ce9c8f8781?pvs=21)
+💡 Antes de pasar a las siguientes funciones, es importante entender cómo funciona malloc y la memoria dinamica.
 
 </aside>
 
