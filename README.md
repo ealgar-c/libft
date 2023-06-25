@@ -1,72 +1,71 @@
-# libft
-repositorio para hacer el primer proyecto de 42 cursus
+<div align="center">
+	<h1> libft </h1>
+	<p>Tu primera librería</p>
+	<br />
+	<img src="https://img.shields.io/badge/norme-OK-success?style=flat"/>
+	<img src="https://img.shields.io/badge/leaks-CLEAR-success?style=flat"/>
+	<img src="https://img.shields.io/badge/bonus-done-success?style=flat"/>
+	<img src="https://img.shields.io/badge/-125%2F100-success?style=flat&logo=42&logoColor=000" />
+</div>
 
-working progression:
+<h2 align="center">📜 PROYECT DESCRIPTION 📜</h2>
 
-![](https://geps.dev/progress/100)
+Este es tu primer proyecto como estudiante de 42. Deberás programar algunas funciones de la librería estándar de C, así como otras funciones que te serán útiles a lo largo de todo tu cursus.
 
-francinette progression:
+<h2 align="center">🌲 PROYECT TREE 🌲</h2>
 
-![](https://geps.dev/progress/100)
+```
+.
+├── Makefile
+├── README.md
+├── ft_atoi.c
+├── ft_bzero.c
+├── ft_calloc.c
+├── ft_isalnum.c
+├── ft_isalpha.c
+├── ft_isascii.c
+├── ft_isdigit.c
+├── ft_isprint.c
+├── ft_itoa.c
+├── ft_lstadd_back_bonus.c
+├── ft_lstadd_front_bonus.c
+├── ft_lstclear_bonus.c
+├── ft_lstdelone_bonus.c
+├── ft_lstiter_bonus.c
+├── ft_lstlast_bonus.c
+├── ft_lstmap_bonus.c
+├── ft_lstnew_bonus.c
+├── ft_lstsize_bonus.c
+├── ft_memchr.c
+├── ft_memcmp.c
+├── ft_memcpy.c
+├── ft_memmove.c
+├── ft_memset.c
+├── ft_putchar_fd.c
+├── ft_putendl_fd.c
+├── ft_putnbr_fd.c
+├── ft_putstr_fd.c
+├── ft_split.c
+├── ft_strchr.c
+├── ft_strdup.c
+├── ft_striteri.c
+├── ft_strjoin.c
+├── ft_strlcat.c
+├── ft_strlcpy.c
+├── ft_strlen.c
+├── ft_strmapi.c
+├── ft_strncmp.c
+├── ft_strnstr.c
+├── ft_strrchr.c
+├── ft_strtrim.c
+├── ft_substr.c
+├── ft_tolower.c
+├── ft_toupper.c
+└── libft.h
 
-| Proyectos | Estado | Norme | francinette |
-| ---       | ---    | --- | --- |
-| isalpha | done | OK! | ok |
-| isdigit | done | OK! | ok |
-| isalnum | done | OK! | ok |
-| isascii | done | OK! | ok |
-| isprint | done | OK! | ok |
-| strlen | done | OK! | ok |
-| memset | done | OK! | ok |
-| bzero | done | OK! | ok |
-| memcpy | done | OK! | ok |
-| memmove | done | OK! | ok |
-| strlcpy | done | OK! | ok |
-| strlcat | done | OK! | ok |
-| toupper | done | OK! | ok |
-| tolower | done | OK! | ok |
-| strchr | done | OK! | ok |
-| strrchr | done | OK! | ok |
-| strncmp | done | OK! | ok |
-| memchr | done | OK! | ok |
-| memcmp | done | OK! | ok |
-| strnstr | done | OK! | ok |
-| atoi | done | OK! | ok |
-| calloc | done | OK! | ok |
-| strdup | done | OK! | ok |
-| substr | done | OK! | ok |
-| strjoin | done | OK! | ok |
-| strtrim | done | OK! | ok |
-| split | done | OK! | ok |
-| itoa | done | OK! | ok |
-| strmapi | done | OK! | ok |
-| striteri | done | OK! | ok |
-| putchar_fd | done | OK! | ok |
-| putstr_fd | done | OK! | ok |
-| putendl_fd | done | OK! | ok |
-| putnbr_fd | done | OK! | ok |
+```
 
-**BONUS FUNCTIONS**	
-
-working progression:
-
-![](https://geps.dev/progress/100)
-
-francinette progression:
-
-![](https://geps.dev/progress/100)
-
-| Proyectos | Estado | Norme | francinette |
-| ---       | ---    | --- | --- |
-| ft_lstnew | done | OK! | ok |
-| ft_lstadd_front | done | OK! | ok |
-| ft_lstsize | done | OK! | ok |
-| ft_lstlast | done | OK! | ok |
-| ft_lstaddback | done | OK! | ok |
-| ft_lstdelone | done | OK! | ok |
-| ft_lstclear | done | OK! | ok |
-| ft_lstiter | done | OK! | ok |
-| ft_lstmap | done | OK! | ok |
+<h2 align="center">⚙️ PROYECT GENERAL PROCEDURE ⚙️</h2>
 
 ## **isalpha**
 
