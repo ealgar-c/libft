@@ -66,6 +66,13 @@ Este es tu primer proyecto como estudiante de 42. Deberás programar algunas fun
 ```
 
 <h2 align="center">⚙️ PROYECT GENERAL PROCEDURE ⚙️</h2>
+## INDEX
+
+- [Introduction](#introduction)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## **isalpha**
 
